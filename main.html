@@ -344,14 +344,14 @@ video:-webkit-full-screen { object-fit: contain !important; width: 100%; height:
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
           <div class="media-type-option" id="vt-option-image" data-vt="image" onclick="selectVisualType('image')">
             <div class="media-type-preview">
-              <img src="https://chirichiri3720.github.io/Content-Recycle/Select_Type/select_image.png" style="width:100%;height:100%;object-fit:cover;display:block" alt="画像">
+              <img src="https://hidemasanakano.github.io/Content-Recycle/Select_Type/select_image.png" style="width:100%;height:100%;object-fit:cover;display:block" alt="画像">
             </div>
             <div class="media-type-label">🖼 画像</div>
             <div class="media-type-desc">gpt-image-2で生成</div>
           </div>
           <div class="media-type-option" id="vt-option-video" data-vt="video" onclick="selectVisualType('video')">
             <div class="media-type-preview">
-              <video src="https://chirichiri3720.github.io/Content-Recycle/Select_Type/select_movie.mp4" autoplay muted loop playsinline style="width:100%;height:100%;object-fit:cover;display:block"></video>
+              <video src="https://hidemasanakano.github.io/Content-Recycle/Select_Type/select_movie.mp4" autoplay muted loop playsinline style="width:100%;height:100%;object-fit:cover;display:block"></video>
             </div>
             <div class="media-type-label">🎞 動画</div>
             <div class="media-type-desc">Kling APIで生成</div>
@@ -603,7 +603,7 @@ const OPTIONS_URL    = 'https://weby.app.n8n.cloud/webhook-test/Content-Recycle-
 const GENERATE_URL   = 'https://weby.app.n8n.cloud/webhook-test/Content-Recycle-generate'; // WH4+5 TTS→映像
 const COMPOSE_URL    = 'https://weby.app.n8n.cloud/webhook-test/Content-Recycle-compose';  // WH7 字幕+合成
 const SAVE_META_URL  = 'https://weby.app.n8n.cloud/webhook-test/Content-Recycle-meta';
-const BASE_IMG_URL   = 'https://raw.githubusercontent.com/chirichiri3720/Content-Recycle/main/Tmp_Image';
+const BASE_IMG_URL   = 'https://raw.githubusercontent.com/hidemasanakano/Content-Recycle/main/Tmp_Image';
 
 const VIDEO_URL_WHITELIST = [
   'cdn.shotstack.io',
@@ -791,7 +791,7 @@ function renderExpressionGridStep1() {
     if (state.selectedExpression === key) div.classList.add('selected');
     div.addEventListener('click', () => selectExpressionStep1(key));
     const img = document.createElement('img');
-    img.src = `https://raw.githubusercontent.com/chirichiri3720/Content-Recycle/main/Images/${key}.png`;
+    img.src = `https://raw.githubusercontent.com/hidemasanakano/Content-Recycle/main/Images/${key}.png`;
     img.alt = EXPRESSION_LABEL[key]; img.loading = 'lazy';
     div.appendChild(img);
     const cap = document.createElement('div'); cap.className = 'style-option-cap';
@@ -1945,19 +1945,19 @@ function renderContinueButton() {
 const MOCK_OPTIONS = {
   mood_profile: { primary_mood:'reassuring', secondary_mood:'trustworthy', energy:2, tone_keywords:['calm'], genre:'casestudy' },
   voices: [
-  { id:'v1', label:'自然な女性の声', voice_name:'ja-JP-Neural2-B', ssml_gender:'FEMALE', speaking_rate:1.3, pitch:1, sample_url:'https://chirichiri3720.github.io/Content-Recycle/Sample_Tts/sample_tts1.mp3', reason:['reassuring','calm','warm'], energy:2, genre_affinity:['faq','howto','casestudy'] },
-  { id:'v2', label:'落ち着いた男性の声', voice_name:'ja-JP-Neural2-C', ssml_gender:'MALE', speaking_rate:1.3, pitch:1, sample_url:'https://chirichiri3720.github.io/Content-Recycle/Sample_Tts/sample_tts2.mp3', reason:['trustworthy','serious','informative'], energy:2, genre_affinity:['faq','casestudy','compare','opinion'] },
-  { id:'v3', label:'信頼感のある男性の声', voice_name:'ja-JP-Neural2-D', ssml_gender:'MALE', speaking_rate:1.3, pitch:1, sample_url:'https://chirichiri3720.github.io/Content-Recycle/Sample_Tts/sample_tts3.mp3', reason:['calm','trustworthy','neutral'], energy:3, genre_affinity:['faq','howto','compare'] },
-  { id:'v4', label:'ナチュラルな女性の声', voice_name:'ja-JP-Chirp3-HD-Zephyr', ssml_gender:'FEMALE', speaking_rate:1.3, pitch:1, sample_url:'https://chirichiri3720.github.io/Content-Recycle/Sample_Tts/sample_tts4.mp3', reason:['natural','friendly','reassuring','positive'], energy:3, genre_affinity:['faq','howto','opinion'] },
+  { id:'v1', label:'自然な女性の声', voice_name:'ja-JP-Neural2-B', ssml_gender:'FEMALE', speaking_rate:1.3, pitch:1, sample_url:'https://hidemasanakano.github.io/Content-Recycle/Sample_Tts/sample_tts1.mp3', reason:['reassuring','calm','warm'], energy:2, genre_affinity:['faq','howto','casestudy'] },
+  { id:'v2', label:'落ち着いた男性の声', voice_name:'ja-JP-Neural2-C', ssml_gender:'MALE', speaking_rate:1.3, pitch:1, sample_url:'https://hidemasanakano.github.io/Content-Recycle/Sample_Tts/sample_tts2.mp3', reason:['trustworthy','serious','informative'], energy:2, genre_affinity:['faq','casestudy','compare','opinion'] },
+  { id:'v3', label:'信頼感のある男性の声', voice_name:'ja-JP-Neural2-D', ssml_gender:'MALE', speaking_rate:1.3, pitch:1, sample_url:'https://hidemasanakano.github.io/Content-Recycle/Sample_Tts/sample_tts3.mp3', reason:['calm','trustworthy','neutral'], energy:3, genre_affinity:['faq','howto','compare'] },
+  { id:'v4', label:'ナチュラルな女性の声', voice_name:'ja-JP-Chirp3-HD-Zephyr', ssml_gender:'FEMALE', speaking_rate:1.3, pitch:1, sample_url:'https://hidemasanakano.github.io/Content-Recycle/Sample_Tts/sample_tts4.mp3', reason:['natural','friendly','reassuring','positive'], energy:3, genre_affinity:['faq','howto','opinion'] },
 ],
   bgms: [
-  { id:'b1', name:'BGM1', storage_url:'https://eitwhzteuhouxfmogvnf.supabase.co/storage/v1/object/public/bgm/bgm1.mp3', sample_url:'https://chirichiri3720.github.io/Content-Recycle/Sample_Bgm/sample_bgm1.mp3', reason:['neutral','informative','positive'], energy:3, genre_affinity:['faq','howto','compare','ranking'], label:'軽快な情報解説系' },
-  { id:'b2', name:'BGM2', storage_url:'https://eitwhzteuhouxfmogvnf.supabase.co/storage/v1/object/public/bgm/bgm2.mp3', sample_url:'https://chirichiri3720.github.io/Content-Recycle/Sample_Bgm/sample_bgm2.mp3', reason:['hopeful','reassuring','calm','positive'], energy:2, genre_affinity:['casestudy','howto','opinion','faq'], label:'穏やかな希望・安心系' },
-  { id:'b3', name:'BGM3', storage_url:'https://eitwhzteuhouxfmogvnf.supabase.co/storage/v1/object/public/bgm/bgm3.mp3', sample_url:'https://chirichiri3720.github.io/Content-Recycle/Sample_Bgm/sample_bgm3.mp3', reason:['warm','friendly','reassuring','natural'], energy:2, genre_affinity:['faq','howto','casestudy'], label:'温かく親しみやすい安心系' },
-  { id:'b4', name:'BGM4', storage_url:'https://eitwhzteuhouxfmogvnf.supabase.co/storage/v1/object/public/bgm/bgm4.mp3', sample_url:'https://chirichiri3720.github.io/Content-Recycle/Sample_Bgm/sample_bgm4.mp3', reason:['bright','friendly','uplifting','positive'], energy:4, genre_affinity:['ranking','howto','compare','faq'], label:'明るく前向きな高揚系' },
-  { id:'b5', name:'BGM5', storage_url:'https://eitwhzteuhouxfmogvnf.supabase.co/storage/v1/object/public/bgm/bgm5.mp3', sample_url:'https://chirichiri3720.github.io/Content-Recycle/Sample_Bgm/sample_bgm5.mp3', reason:['serious','empathetic','urgent','curious'], energy:4, genre_affinity:['casestudy','opinion','compare'], label:'緊張感のある問題提起系' },
-  { id:'b6', name:'BGM6', storage_url:'https://eitwhzteuhouxfmogvnf.supabase.co/storage/v1/object/public/bgm/bgm6.mp3', sample_url:'https://chirichiri3720.github.io/Content-Recycle/Sample_Bgm/sample_bgm6.mp3', reason:['calm','trustworthy','informative','serious'], energy:2, genre_affinity:['casestudy','faq','howto','compare'], label:'落ち着いた信頼・情報解説系' },
-  { id:'b7', name:'BGM7', storage_url:'https://eitwhzteuhouxfmogvnf.supabase.co/storage/v1/object/public/bgm/bgm7.mp3', sample_url:'https://chirichiri3720.github.io/Content-Recycle/Sample_Bgm/sample_bgm7.mp3', reason:['curious','hook','bright','informative'], energy:3, genre_affinity:['ranking','compare','faq','howto'], label:'軽快なフック・興味喚起系' },
+  { id:'b1', name:'BGM1', storage_url:'https://eitwhzteuhouxfmogvnf.supabase.co/storage/v1/object/public/bgm/bgm1.mp3', sample_url:'https://hidemasanakano.github.io/Content-Recycle/Sample_Bgm/sample_bgm1.mp3', reason:['neutral','informative','positive'], energy:3, genre_affinity:['faq','howto','compare','ranking'], label:'軽快な情報解説系' },
+  { id:'b2', name:'BGM2', storage_url:'https://eitwhzteuhouxfmogvnf.supabase.co/storage/v1/object/public/bgm/bgm2.mp3', sample_url:'https://hidemasanakano.github.io/Content-Recycle/Sample_Bgm/sample_bgm2.mp3', reason:['hopeful','reassuring','calm','positive'], energy:2, genre_affinity:['casestudy','howto','opinion','faq'], label:'穏やかな希望・安心系' },
+  { id:'b3', name:'BGM3', storage_url:'https://eitwhzteuhouxfmogvnf.supabase.co/storage/v1/object/public/bgm/bgm3.mp3', sample_url:'https://hidemasanakano.github.io/Content-Recycle/Sample_Bgm/sample_bgm3.mp3', reason:['warm','friendly','reassuring','natural'], energy:2, genre_affinity:['faq','howto','casestudy'], label:'温かく親しみやすい安心系' },
+  { id:'b4', name:'BGM4', storage_url:'https://eitwhzteuhouxfmogvnf.supabase.co/storage/v1/object/public/bgm/bgm4.mp3', sample_url:'https://hidemasanakano.github.io/Content-Recycle/Sample_Bgm/sample_bgm4.mp3', reason:['bright','friendly','uplifting','positive'], energy:4, genre_affinity:['ranking','howto','compare','faq'], label:'明るく前向きな高揚系' },
+  { id:'b5', name:'BGM5', storage_url:'https://eitwhzteuhouxfmogvnf.supabase.co/storage/v1/object/public/bgm/bgm5.mp3', sample_url:'https://hidemasanakano.github.io/Content-Recycle/Sample_Bgm/sample_bgm5.mp3', reason:['serious','empathetic','urgent','curious'], energy:4, genre_affinity:['casestudy','opinion','compare'], label:'緊張感のある問題提起系' },
+  { id:'b6', name:'BGM6', storage_url:'https://eitwhzteuhouxfmogvnf.supabase.co/storage/v1/object/public/bgm/bgm6.mp3', sample_url:'https://hidemasanakano.github.io/Content-Recycle/Sample_Bgm/sample_bgm6.mp3', reason:['calm','trustworthy','informative','serious'], energy:2, genre_affinity:['casestudy','faq','howto','compare'], label:'落ち着いた信頼・情報解説系' },
+  { id:'b7', name:'BGM7', storage_url:'https://eitwhzteuhouxfmogvnf.supabase.co/storage/v1/object/public/bgm/bgm7.mp3', sample_url:'https://hidemasanakano.github.io/Content-Recycle/Sample_Bgm/sample_bgm7.mp3', reason:['curious','hook','bright','informative'], energy:3, genre_affinity:['ranking','compare','faq','howto'], label:'軽快なフック・興味喚起系' },
 ],
 };
 
